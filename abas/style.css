@@ -1,0 +1,145 @@
+
+:root{ --vermelho:#E50914;
+    --preto:#141414;}
+*{ margin: 0; padding:0; box-sizing: border-box;}
+
+
+
+body{
+   background: var(--preto);
+   font-family: 'Times New Roman',Times, serif;
+   color: white;
+}
+
+
+header .container{
+   display: flex;
+   flex-direction: row;
+   align-items: center;
+   justify-content: space-between;
+
+}
+
+header .logo{
+   margin-left: 5px;
+   color: var(--vermelho);
+   font-family: 'Times New Roman', sans-serif;
+   font-size: 40px;
+   margin-right: 100px;
+                
+}
+
+header nav a{
+   text-decoration:none;
+       color: #aaa;
+     
+
+}
+
+header nav a:hover{
+   color:#fff;
+}
+
+.container{
+   width: 500px;
+   display: flex;
+   align-content: center; 
+}
+
+.container .capa{
+    width: 500px;
+    display: flex;
+    align-content: center; 
+ }
+.container .capa-livro img{
+    width: 500px;
+    border-radius: 15px;
+    display: flex;
+    margin-left: 10px;
+    margin-top: 10px;
+    
+}
+.generos{
+    margin-top: 5px;
+    margin-left: 10px;
+    margin-bottom: 10px;
+
+}
+
+.container-descricao{
+    width: 300px;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    margin-left: 10px;
+    
+}
+.descicao{
+    font-family: Arial, Helvetica, sans-serif;
+    align-items: flex-start;
+}
+.info{
+    margin-left: 10px;
+    margin-bottom: 10px;
+    font-size: 16px;
+    margin-top: 10px;
+}
+.nome{
+    font-size: 32px;
+    width: 800px;
+}
+.container-videos{
+    display: flex;
+    align-content: center; 
+
+}
+.videos-doc{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+   
+}
+.vd{
+  margin-top: 10px;
+  margin-bottom: 20px;
+  margin-left: 10px;
+  
+
+}
+.genero{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: 10px;
+    
+
+}
+.resumo{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: 10px;
+}
+
+@media screen and (max-width:700px){
+    header .container{
+        display: flex;
+        flex-direction: column;
+      
+    
+    }
+    .botao{
+        margin-top: 5px;
+        width: 200px;
+    }
+            
+    
+}
+@media screen and (min-width:100px){
+    .descricao{
+        width: 50%;
+    }
+    
+}
